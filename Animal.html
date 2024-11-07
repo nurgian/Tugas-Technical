@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animal Observer</title>
+</head>
+<body>
+
+  <h1>Animal Observer</h1>
+  <p id="output"></p>
+
+  <script>
+    // Variable in global scope
+    let animal = "Giant Pacific Octopus";
+
+    // Function definition
+    function observe() {
+      // Local variable with the same name
+      let animal = "Pajama Squid";
+      document.getElementById("output").innerText = animal; // Displays local variable
+    }
+
+    // Calling the function
+    observe();
+  </script>
+
+</body>
+</html>
